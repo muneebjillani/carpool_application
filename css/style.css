@@ -55,6 +55,46 @@ body {
   overflow: hidden;
 }
 
+.road {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 3px dashed #8a8a8a;
+}
+
+.car {
+  position: absolute;
+  top: calc(50% - 14px);
+  width: 44px;
+  height: 28px;
+  border: 2px solid #1a1a1a;
+  border-radius: 8px;
+  background-color: #fff;
+  left: -60px;
+  animation: drive 6s linear infinite;
+}
+
+.car-b {
+  animation-delay: 1.2s;
+  background: #1a1a1a;
+}
+
+.hero-caption {
+  position: absolute;
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #595959;
+}
+
+@keyframes drive {
+  to {
+    left: 100%;
+  }
+}
+
 .tagline {
   font-size: 22px;
   font-weight: 600;
