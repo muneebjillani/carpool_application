@@ -55,7 +55,7 @@ body {
   flex: 1;
   background: #e6f4f1;
   min-height: 17.5rem;
-  border: 2px solid #1a1a1a;
+  border: 2px transparent #1a1a1a;
   border-radius: 1rem;
   background: #f0f0f0;
   overflow: hidden;
