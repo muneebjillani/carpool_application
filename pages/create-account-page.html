@@ -2,13 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width:device-width initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>HumSafar</title>
-    <link rel="stylesheet.css" href="../css/style.css" />
-    <link rel="stylesheet.css" href="../css/authentication.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/authentication.css" />
     <script src="../js/create-account.js" defer></script>
   </head>
   <body>
-    <p>create-account-page</p>
+    <main class="screen">
+      <header class="header">
+        <h1 class="authentication-title">Create Account</h1>
+      </header>
+      <form id="create-account-form" action="" method="POST">
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Full name"
+            autocomplete="name"
+            minlength="2"
+            maxlength="80"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="phone-number">Phone number</label>
+          <input
+            type="tel"
+            id="phone-number"
+            placeholder="03XXXXXXXXX"
+            autocomplete="tel"
+            inputmode="tel"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="cnic">CNIC</label>
+          <input
+            type="text"
+            id="cnic"
+            placeholder="XXXXX-XXXXXXX-X"
+            inputmode="numeric"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="At least 8 characters"
+            minlength="8"
+            required
+          />
+        </div>
+
+        <button class="btn btn-save-and-continue">Save & Continue</button>
+
+        <p class="switch-text">
+          Already have an account?
+          <a href="login-page.html">Login</a>
+        </p>
+      </form>
+    </main>
   </body>
 </html>
