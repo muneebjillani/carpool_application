@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HumSafar</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/login.js" defer></script>
+  </head>
+  <body>
+    <main class="screen">
+      <header class="header">
+        <h1 class="welcome-title">Hello, Welcome</h1>
+      </header>
+      <form id="login-form" action="" method="post">
+        <h2 class="login-title">Login</h2>
+        <div class="input-box">
+          <input
+            type="text"
+            id="login-username"
+            name="username"
+            placeholder="Username"
+            aria-label="username"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            placeholder="Password"
+            area-label="password"
+            required
+          />
+        </div>
+        <p class="forgot-link"><a href="#">Forgot Password</a></p>
+        <button type="button" class="btn btn-login" id="login-submit">
+          Login
+        </button>
+        <p class="switch-text">
+          Don't have an account
+          <a href="../pages/create-account-page.html">Create </a>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
