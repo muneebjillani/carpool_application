@@ -1,13 +1,25 @@
 .screen.rides-screen {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  height: 100dvh;
-  overflow: hidden; /* Locks outer body scroll, internal container scrolls instead */
+
   padding-bottom: 0;
 }
 
 .fixed-search-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-top: -1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #d0d0d0;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
   background: linear-gradient(180deg, #ffffff, #d3ece7);
   padding-bottom: 1rem;
@@ -47,8 +59,6 @@
   opacity: 0.9;
 }
 .scrollable-rides-container {
-  flex: 1;
-  overflow-y: auto;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
