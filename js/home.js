@@ -7,3 +7,9 @@ function goToPassengerPage() {
 }
 
 passengerBtn.addEventListener("click", goToPassengerPage);
+
+function goToDriverPage() {
+  window.location.href = "../pages/driver.html";
+}
+
+driverBtn.addEventListener("click", goToDriverPage);

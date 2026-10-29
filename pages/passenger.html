@@ -13,7 +13,7 @@
       <div class="fixed-search-container">
         <header class="header home-header">
           <h1 class="brand">Find Rides</h1>
-          <a href="home-page.html" class="back-link">🏠</a>
+          <a href="./home.html" class="back-link">🏠</a>
         </header>
 
         <form class="search-form">
@@ -26,6 +26,39 @@
           <div class="field"><input type="date" /></div>
           <button type="submit" class="btn btn-find-ride">Find Ride</button>
         </form>
+      </div>
+
+      <div class="scrollable-rides-container">
+        <div class="ride-card">
+          <div class="ride-schedule-row">
+            <div class="time-locations">
+              <div class="time-loc-item">
+                <span class="time">10:00 AM</span
+                ><span class="location">LDA</span>
+              </div>
+              <div class="time-loc-item">
+                <span class="time">11:00 AM</span
+                ><span class="location">EME</span>
+              </div>
+            </div>
+            <div class="price-tag">Rs. 350</div>
+          </div>
+          <div class="ride-footer-row">
+            <div class="user-info">
+              <div class="avatar-circle">A</div>
+              <div class="user-details">
+                <h4>Ahmed</h4>
+                <span class="rating">★ 4.8</span>
+              </div>
+            </div>
+            <button
+              class="btn-action-ride"
+              onclick="alert('Ride request sent!')"
+            >
+              Request
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   </body>
