@@ -1,18 +1,7 @@
 .header {
   display: flex;
   justify-content: center;
-}
-.authentication-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-#create-account-form {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  margin-top: 2rem;
 }
 
 .field {
