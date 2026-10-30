@@ -60,6 +60,7 @@ body {
   background: #f0f0f0;
   overflow: hidden;
   border-color: #0f6b6b;
+  max-height: 20rem;
 }
 
 .road {
@@ -121,6 +122,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .btn {
   display: flex;
